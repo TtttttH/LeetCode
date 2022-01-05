@@ -1,4 +1,4 @@
-package com.achui.leetcode.easy;
+package easy;
 
 import java.util.ArrayList;
 import java.util.List;

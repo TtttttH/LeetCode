@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.List;
+package middle.List;
 
 /**
  * No.142 环形链表

@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.doublepoint;
+package middle.doublepoint;
 
 import java.util.Arrays;
 

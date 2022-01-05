@@ -1,4 +1,4 @@
-package com.achui.leetcode.easy.BinaryTree;
+package easy.BinaryTree;
 
 /**
  * No.404 左叶子之和

@@ -1,4 +1,4 @@
-package com.achui.leetcode.easy;
+package easy;
 
 /**
  * No.28 实现strStr() KMP

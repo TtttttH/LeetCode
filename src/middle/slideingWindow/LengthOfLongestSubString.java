@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.slideingWindow;
+package middle.slideingWindow;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package com.achui.leetcode.easy.BinaryTree;
+package easy.BinaryTree;
 
 import java.util.LinkedList;
 import java.util.List;

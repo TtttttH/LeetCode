@@ -1,4 +1,4 @@
-package com.achui.leetcode.easy;
+package easy;
 
 /**
  * No.383 赎金信

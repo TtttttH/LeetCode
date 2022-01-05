@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.slideingWindow;
+package middle.slideingWindow;
 
 /**
  * No.11 盛水最多的容器

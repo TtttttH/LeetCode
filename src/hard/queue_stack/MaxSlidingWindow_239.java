@@ -1,4 +1,4 @@
-package com.achui.leetcode.hard.queue_stack;
+package hard.queue_stack;
 
 import java.util.Deque;
 import java.util.LinkedList;

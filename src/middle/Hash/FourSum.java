@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.Hash;
+package middle.Hash;
 
 /**
  * No.18 四数之和

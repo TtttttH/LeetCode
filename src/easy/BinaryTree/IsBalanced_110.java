@@ -1,4 +1,4 @@
-package com.achui.leetcode.easy.BinaryTree;
+package easy.BinaryTree;
 
 /**
  * No.110 平衡二叉树

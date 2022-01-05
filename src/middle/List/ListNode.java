@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.List;
+package middle.List;
 
 public class ListNode{
     int val;

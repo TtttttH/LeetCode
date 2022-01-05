@@ -1,4 +1,4 @@
-package com.achui.leetcode.easy;
+package easy;
 
 /**
  * No.459 重复的子字符串

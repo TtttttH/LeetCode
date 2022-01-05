@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.MonotonousStack;
+package middle.MonotonousStack;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

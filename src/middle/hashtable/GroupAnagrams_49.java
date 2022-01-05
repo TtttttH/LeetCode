@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.hashtable;
+package middle.hashtable;
 
 import java.util.*;
 

@@ -1,6 +1,5 @@
-package com.achui.leetcode.easy;
+package easy;
 
-import java.util.ArrayDeque;
 import java.util.LinkedList;
 import java.util.Queue;
 

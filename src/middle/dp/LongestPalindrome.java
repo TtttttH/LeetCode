@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.dp;
+package middle.dp;
 
 /**
  * 给你一个字符串s, 找到s 中最长的回文子串

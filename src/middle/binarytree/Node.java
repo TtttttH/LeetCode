@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.binarytree;
+package middle.binarytree;
 
 import java.util.List;
 

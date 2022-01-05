@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.binarytree;
+package middle.binarytree;
 
 import java.util.ArrayList;
 import java.util.Deque;
@@ -9,7 +9,7 @@ import java.util.List;
  *  No.637 二叉树的层平均值
  */
 public class AverageOfLevels_637 {
-    public List<Double> aveerageOfLevels(TreeNode root) {
+    public List<Double> averageOfLevels(TreeNode root) {
         List<Double> results = new ArrayList<>();
         Deque<TreeNode> deque = new LinkedList<>();
 

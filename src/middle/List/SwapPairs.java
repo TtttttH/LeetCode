@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.List;
+package middle.List;
 
 /**
  * No.24 两两交换链表中的结点

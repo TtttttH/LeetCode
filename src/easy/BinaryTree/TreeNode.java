@@ -1,4 +1,4 @@
-package com.achui.leetcode.easy.BinaryTree;
+package easy.BinaryTree;
 
 public class TreeNode {
     int val;

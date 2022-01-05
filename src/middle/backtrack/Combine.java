@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.backtrack;
+package middle.backtrack;
 
 import java.util.ArrayList;
 import java.util.List;

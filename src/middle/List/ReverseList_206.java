@@ -1,5 +1,4 @@
-package com.achui.leetcode.middle.List;
-
+package middle.List;
 /**
  * No.206
  */

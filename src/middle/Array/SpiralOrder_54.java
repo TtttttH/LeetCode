@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.Array;
+package middle.Array;
 
 import java.util.ArrayList;
 import java.util.List;

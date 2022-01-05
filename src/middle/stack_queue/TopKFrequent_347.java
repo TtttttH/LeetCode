@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.stack_queue;
+package middle.stack_queue;
 
 import java.util.*;
 

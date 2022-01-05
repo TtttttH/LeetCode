@@ -1,4 +1,4 @@
-package com.achui.leetcode.easy;
+package easy;
 
 /**
  * No.21 合并两个有序链表

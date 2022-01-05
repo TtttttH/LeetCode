@@ -1,4 +1,4 @@
-package com.achui.leetcode.easy;
+package easy;
 
 /**
  * 剑指offer 05.替换空格

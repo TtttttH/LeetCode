@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.slideingWindow;
+package middle.slideingWindow;
 
 /**
  * No.904 水果成篮

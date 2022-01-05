@@ -1,6 +1,4 @@
-package com.achui.leetcode.middle.List;
-
-import java.util.LinkedList;
+package middle.List;
 
 /**
  * No.707 :设计链表

@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle;
+package middle;
 
 /**
  * No.6 Z字型变换

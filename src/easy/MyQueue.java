@@ -1,4 +1,4 @@
-package com.achui.leetcode.easy;
+package easy;
 
 import com.sun.jmx.remote.internal.ArrayQueue;
 

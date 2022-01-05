@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.Hash;
+package middle.Hash;
 
 import java.util.HashMap;
 import java.util.Map;

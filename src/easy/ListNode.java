@@ -1,4 +1,4 @@
-package com.achui.leetcode.easy;
+package easy;
 
 public class ListNode {
         int val;

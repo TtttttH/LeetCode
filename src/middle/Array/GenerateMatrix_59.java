@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.Array;
+package middle.Array;
 
 /**
  * No.59 螺旋矩阵 two

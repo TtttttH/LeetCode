@@ -1,5 +1,4 @@
-package com.achui.leetcode.easy.BinaryTree;
-
+package easy.BinaryTree;
 /**
  * No.112 路径总和
  */

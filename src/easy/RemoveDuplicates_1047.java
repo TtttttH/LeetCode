@@ -1,4 +1,4 @@
-package com.achui.leetcode.easy;
+package easy;
 
 import java.util.Deque;
 import java.util.LinkedList;
