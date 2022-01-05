@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.String;
+package middle.String;
 
 /**
  * kmp算法实现strStr()

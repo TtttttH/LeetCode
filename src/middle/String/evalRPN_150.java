@@ -1,4 +1,4 @@
-package com.achui.leetcode.middle.String;
+package middle.String;
 
 import java.util.Deque;
 import java.util.LinkedList;
