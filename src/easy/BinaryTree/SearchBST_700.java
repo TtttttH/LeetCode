@@ -1,4 +1,4 @@
-package middle.binarytree;
+package easy.BinaryTree;
 
 /**
  * No.700 二叉搜索树中的搜索

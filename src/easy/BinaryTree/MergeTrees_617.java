@@ -1,4 +1,4 @@
-package middle.binarytree;
+package easy.BinaryTree;
 
 /**
  * No.617 合并二叉树
