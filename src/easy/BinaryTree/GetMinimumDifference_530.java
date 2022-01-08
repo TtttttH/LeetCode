@@ -1,8 +1,5 @@
 package easy.BinaryTree;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * No.530 二叉搜索树的最小绝对差
  */
