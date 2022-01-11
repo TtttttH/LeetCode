@@ -9,41 +9,46 @@ import java.util.*;
 public class LetterCombinations {
     //创建一个全局list来保存字符串结果
     List<String> result = new ArrayList<>();
-
-    public  List<String> letterCombination(String digits) {
-        if (digits == null || digits.length() ==0) {
+    //应该用StringBuilder!不要直接用String一直占用新内存!
+    StringBuilder sb = new StringBuilder();
+    public List<String> letterCombinations(String digits) {
+        if(digits == null || digits.length() == 0) {
             return result;
         }
+        Map<Character, String> map = new HashMap<>();
+        map.put('2', "abc");
+        map.put('3', "def");
+        map.put('4', "ghi");
+        map.put('5', "jkl");
+        map.put('6', "mno");
+        map.put('7', "pqrs");
+        map.put('8', "tuv");
+        map.put('9', "wxyz");
 
-        Map<Character, String> numWords = new HashMap<>();
-        numWords.put('2', "abc");
-        numWords.put('3', "def");
-        numWords.put('4', "ghi");
-        numWords.put('5', "jkl");
-        numWords.put('6', "mno");
-        numWords.put('7', "pqrs");
-        numWords.put('8', "tuv");
-        numWords.put('9', "wxyz");
-        dfs(numWords, digits, 0, "");
+        backtracking(digits, map, 0);
         return result;
+
     }
 
-    private void dfs(Map<Character, String> numWords, String digits, int deep, String str) {
-        if (str.length() == digits.length()) {
-            //当拼接字符串长度等于输入数字字符串长度时，添加到结果集，返回上一层
-            result.add(str);
+    private void backtracking(String digits, Map<Character, String> map, int digitIndex) {
+        if (sb.length() == digits.length()) {
+            result.add(sb.toString());
             return;
         }
-        String temp = numWords.get(digits.charAt(deep));
-        for(int i = 0; i < temp.length(); i ++) {
-            //深度+1,向下继续遍历
-            dfs(numWords, digits, deep+1, str + temp.charAt(i));
+
+        Character number = digits.charAt(digitIndex);
+        String letters = map.get(number);
+
+        for (int i = 0; i < letters.length(); i ++) {
+            sb.append(letters.charAt(i));
+            backtracking(digits, map, digitIndex + 1);
+            sb.deleteCharAt(sb.length() - 1);
         }
     }
 
     public static void main(String[] args) {
         LetterCombinations lc = new LetterCombinations();
         String digits = "23";
-        System.out.printf(lc.letterCombination(digits).toString());
+        System.out.printf(lc.letterCombinations(digits).toString());
     }
 }
