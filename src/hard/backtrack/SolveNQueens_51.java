@@ -1,7 +1,9 @@
 package hard.backtrack;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * No.51 N皇后
@@ -11,7 +13,10 @@ public class SolveNQueens_51 {
     List<List<String>> results = new ArrayList<>();
     StringBuilder sb = new StringBuilder();
     int[] path;
-    boolean flag = true;
+    Set<Integer> columns = new HashSet<>();
+    Set<Integer> diagonals1 = new HashSet<>();
+    Set<Integer> diagonals2 = new HashSet<>();
+
     public List<List<String>> solveNQueens(int n) {
         path = new int[n];
         for (int i = 0; i < n; i ++) {
@@ -37,21 +42,25 @@ public class SolveNQueens_51 {
         }
 
         for (int i = 0; i < n; i ++) {
-            flag = true;
-            if (rowNum > 0 ) {
-                for (int j = 0; j < rowNum; j ++) {
-                    if (i == path[j] || (rowNum - j) == Math.abs(i - path[j])) {
-                        flag = false;
-                        break;
-                    }
-                }
+            if (columns.contains(i)) {
+                continue;
             }
 
-            if (flag) {
-                path[rowNum] = i;
-                backtracking(n, rowNum + 1);
-                path[rowNum] = -1;
+            int diagonal1 = rowNum - i;
+            int diagonal2 = rowNum + i;
+            if (diagonals1.contains(diagonal1) || diagonals2.contains(diagonal2)) {
+                continue;
             }
+
+            columns.add(i);
+            diagonals1.add(diagonal1);
+            diagonals2.add(diagonal2);
+            path[rowNum] = i;
+            backtracking(n, rowNum + 1);
+            path[rowNum] = -1;
+            diagonals2.remove(diagonal2);
+            diagonals1.remove(diagonal1);
+            columns.remove(i);
         }
     }
 }
