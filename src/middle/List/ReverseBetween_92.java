@@ -5,46 +5,25 @@ package middle.List;
  */
 public class ReverseBetween_92 {
     public ListNode reverseBetween(ListNode head, int left, int right) {
-        if (left == right || head == null || head.next == null) {
-            return head;
+        ListNode dummy = new ListNode(-1);
+        dummy.next = head;
+        ListNode pre = dummy;
+
+        int i = 0;
+        while (i < left) {
+            pre = pre.next;
+            i ++;
         }
 
-        ListNode cur = head;
-        ListNode preLeft = null;
-        ListNode leftNode = null;
-        ListNode rightNode = null;
-        ListNode pre = null;
-        for (int i = 1; i <= right; i ++) {
-            if (i == left - 1) {
-                preLeft = cur;
-            }
-
-            if (i == left) {
-                leftNode = cur;
-            }
-
-            if (i == right) {
-                rightNode = cur;
-            }
-
-            cur = cur.next;
+        ListNode cur = pre.next;
+        ListNode temp;
+        for (int j = left; j < right; j ++) {
+            temp = cur.next;
+            cur.next = temp.next;
+            temp.next = pre.next;
+            pre.next = temp;
         }
 
-        pre = cur;
-        cur = leftNode;
-
-        for (int i = left; i <= right; i ++) {
-            ListNode temp = cur.next;
-            cur.next = pre;
-            pre = cur;
-            cur = temp;
-        }
-        if(left > 1){
-            preLeft.next = rightNode;
-            return head;
-        } else {
-            return pre;
-        }
-
+        return dummy.next;
     }
 }
