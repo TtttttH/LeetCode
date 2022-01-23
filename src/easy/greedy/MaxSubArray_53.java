@@ -1,4 +1,4 @@
-package easy;
+package easy.greedy;
 
 /**
  * No.53 最大子数组合
