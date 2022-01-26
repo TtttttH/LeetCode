@@ -22,7 +22,7 @@ public class No_118 {
     }
 
     private void addList(int numRows, int depth, List<Integer> prelist) {
-        if (depth > numRows) {
+        if (depth == numRows) {
             return;
         }
 
