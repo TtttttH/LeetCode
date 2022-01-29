@@ -10,6 +10,7 @@ import java.util.List;
 public class No_763 {
     public List<Integer> partitionLabels(String s) {
         List<Integer> result = new ArrayList<>();
+
         HashMap<Character, Integer> rangeMap = new HashMap<>();
         for (int i = 0; i < s.length(); i ++) {
             rangeMap.put(s.charAt(i), i);
@@ -18,11 +19,10 @@ public class No_763 {
         int maxRange = rangeMap.get(s.charAt(0));
         int preRange = 0;
         for (int i = 0; i < s.length(); i ++) {
+            maxRange = Math.max(rangeMap.get(s.charAt(i)), maxRange);
             if (i == maxRange) {
                 result.add(maxRange - preRange + 1);
                 preRange = maxRange + 1;
-            } else {
-                maxRange = Math.max(rangeMap.get(s.charAt(i)), maxRange);
             }
         }
 
