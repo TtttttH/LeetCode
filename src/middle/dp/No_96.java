@@ -3,7 +3,7 @@ package middle.dp;
 /**
  * No.96 不同的二叉搜索树
  */
-public class NumTrees_96 {
+public class No_96 {
     public int numTrees(int n) {
         int[] dp = new int[n + 1];
         dp[0] = 1;
