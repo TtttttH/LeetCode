@@ -3,7 +3,7 @@ package easy.greedy;
 /**
  * No.53 最大子数组合
  */
-public class MaxSubArray_53 {
+public class No_53 {
 
     public int maxSubArray(int[] nums) {
         int sum = 0;
