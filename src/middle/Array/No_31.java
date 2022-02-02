@@ -23,11 +23,7 @@ public class No_31 {
             }
         }
 
-        for (int i = 0; i < nums.length / 2; i ++) {
-            temp = nums[i];
-            nums[i] = nums[nums.length - i - 1];
-            nums[nums.length - i - 1] = temp;
-        }
+        Arrays.sort(nums);
     }
 
     public static void main(String[] args) {
