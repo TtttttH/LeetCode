@@ -3,7 +3,7 @@ package middle.Array;
 /**
  * No.59 螺旋矩阵 two
  */
-public class GenerateMatrix_59 {
+public class No_59 {
     public int[][] generateMatrix(int n) {
         if (n <= 0) {
             return null;

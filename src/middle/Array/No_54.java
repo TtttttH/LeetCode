@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * No.54 螺旋矩阵 TODO
  */
-public class SpiralOrder_54 {
+public class No_54 {
     public List<Integer> spiralOrder (int[][] matrix) {
         int m = matrix.length;
         int n = matrix[0].length;
