@@ -22,7 +22,7 @@ public class No_309 {
             dp[3] = temp2;
         }
 
-        return dp[0];
+        return Math.max(dp[3], Math.max(dp[1], dp[2]));
 // 两种状态二维数组模式
 //        int[][] dp = new int[len][2]; //0.当天不持有 1.当天持有
 //        dp[0][1] = -prices[0];
