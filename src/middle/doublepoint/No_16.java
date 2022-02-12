@@ -10,7 +10,7 @@ import java.util.Arrays;
  * 链接：https://leetcode-cn.com/problems/3sum-closest
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class ThreeSumCloest {
+public class No_16 {
     public static int threeSumCloest(int[] nums, int target) {
         if(nums == null || nums.length < 3) {
             return -1;

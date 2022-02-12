@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * No.15: 给定一个包含n个整数的数组 nums,判断nums中是否存在三个数a, b, c 的和为0
  */
-public class ThreeSum {
+public class No_15 {
 
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> resList = new ArrayList<>();
@@ -66,7 +66,7 @@ public class ThreeSum {
     }
 
     public static void main(String[] args) {
-        ThreeSum ts = new ThreeSum();
+        No_15 ts = new No_15();
         int[] nums = {-1, 0, 1, 2, -1, -4};
         System.out.printf(ts.threeSum(nums).toString());
     }

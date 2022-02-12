@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * No.18 四数之和
  */
-public class FourSum {
+public class No_18 {
 
     public List<List<Integer>> fourSum(int[] nums, int target) {
         List<List<Integer>> results = new ArrayList<>();

@@ -3,7 +3,7 @@ package middle.doublepoint;
 /**
  *  No.75 颜色排序 双指针法
  */
-public class SortColors_75 {
+public class No_75 {
     public void sortColors(int[] nums) {
         int n = nums.length;
         int p0 = 0, p2 = n - 1;
