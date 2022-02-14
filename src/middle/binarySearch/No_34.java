@@ -3,7 +3,7 @@ package middle.binarySearch;
 /**
  * No.34 在排序数组中查找元素的第一个和最后一个位置
  */
-public class SearchRange_34 {
+public class No_34 {
 
     public int[] searchRange(int[] nums, int target) {
         if(nums == null || nums.length == 0) {
@@ -58,7 +58,7 @@ public class SearchRange_34 {
         int[] nums = {5, 7, 7,8,8, 10};
         int target = 8;
 
-        SearchRange_34 test = new SearchRange_34();
+        No_34 test = new No_34();
         test.searchRange(nums, target);
     }
 }

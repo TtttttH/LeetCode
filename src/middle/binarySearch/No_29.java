@@ -3,7 +3,7 @@ package middle.binarySearch;
 /**
  * No.29 两数相除
  */
-public class Divide_29 {
+public class No_29 {
     public int divide(int dividend, int divisor) {
         if (dividend == Integer.MIN_VALUE && divisor == -1) {
             return Integer.MAX_VALUE;
