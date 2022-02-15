@@ -3,7 +3,7 @@ package easy;
 /**
  * No.67 二进制求和
  */
-public class AddBinary_67 {
+public class No_67 {
     public String addBinary(String a, String b) {
         StringBuilder result = new StringBuilder();
         int add = 0;
@@ -31,7 +31,7 @@ public class AddBinary_67 {
     public static void main(String[] args) {
         String a = "11";
         String b = "1";
-        AddBinary_67 test = new AddBinary_67();
+        No_67 test = new No_67();
         System.out.println(test.addBinary(a, b));
     }
 }

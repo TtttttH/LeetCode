@@ -1,12 +1,9 @@
 package easy;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * No.242 有效的字母异味词
  */
-public class IsAnagram_242 {
+public class No_242 {
     public boolean isAnagram(String s, String t) {
         if (s == null || t == null || s.length() != t.length()) {
             return false;

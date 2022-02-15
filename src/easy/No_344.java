@@ -3,7 +3,7 @@ package easy;
 /**
  * No.344 反转字符串:不要给另外的数组分配额外的空间，你必须原地修改输入数组、使用 O(1) 的额外空间解决这一问题
  */
-public class ReverseString_344 {
+public class No_344 {
 
     public void reverseString(char[] s) {
         int left = 0;

@@ -3,7 +3,7 @@ package easy;
 import java.util.Deque;
 import java.util.LinkedList;
 
-public class RemoveDuplicates_1047 {
+public class No_1047 {
     public String removeDuplicates(String s) {
         Deque<Character> queue = new LinkedList<>();
         char ch;
@@ -24,7 +24,7 @@ public class RemoveDuplicates_1047 {
     }
 
     public static void main(String[] args) {
-        RemoveDuplicates_1047 removeclass = new RemoveDuplicates_1047();
+        No_1047 removeclass = new No_1047();
         String s = "abbaca";
         System.out.println(removeclass.removeDuplicates(s));
     }

@@ -3,7 +3,7 @@ package easy;
 /**
  * No.58 最后一个单词的长度
  */
-public class LengthOfLastWord_58 {
+public class No_58 {
 
     public int lengthOfLastWord(String s) {
         if (s == null || s.length() == 0) {

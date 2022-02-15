@@ -3,7 +3,7 @@ package easy;
 /**
  * No.28 实现strStr() KMP
  */
-public class StrStr {
+public class No_28 {
     public int strStr (String haystack, String needle) {
         if (needle == null || "".equals(needle)) {
             return 0;
@@ -39,7 +39,7 @@ public class StrStr {
     public static void main(String[] args) {
         String haystack = "hello";
         String needle = "ll";
-        StrStr st = new StrStr();
+        No_28 st = new No_28();
         System.out.printf(st.strStr(haystack, needle) + "");
     }
 }

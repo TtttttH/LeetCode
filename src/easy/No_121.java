@@ -3,7 +3,7 @@ package easy;
 /**
  * 回文数 121->true; 10->false
  */
-public class IsPalindrome_121 {
+public class No_121 {
 
     public static boolean isPalindrome(int x) {
 

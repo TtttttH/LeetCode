@@ -5,7 +5,7 @@ package easy;
  * 如果剩余字符少于 k 个，则将剩余字符全部反转。
  * 如果剩余字符小于 2k 但大于或等于 k 个，则反转前 k 个字符，其余字符保持原样。
  */
-public class ReverseStr_541 {
+public class No_541 {
 
     public String reverseStr(String s, int k) {
         char[] charStr = s.toCharArray();

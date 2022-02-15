@@ -6,7 +6,7 @@ import java.util.Map;
  * 给定一个整数数组nums,和一个目标值target，返回两个数和为target的数组下标
  * O(n)
  */
-public class TwoSum {
+public class No_01 {
 
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> resultMap = new HashMap<>();

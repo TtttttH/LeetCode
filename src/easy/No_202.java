@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * No.202 快乐数
  */
-public class IsHappy_202 {
+public class No_202 {
     public boolean isHappy(int n) {
         Set<Integer> record = new HashSet<>();
         while (n != 1 && !record.contains(n)) {

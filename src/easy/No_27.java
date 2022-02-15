@@ -3,7 +3,7 @@ package easy;
 /**
  * No.27 移除元素
  */
-public class RemoveElement_27 {
+public class No_27 {
     public int removeElement(int[] nums, int val) {
         if (nums == null || nums.length == 0) {
             return 0;
@@ -31,7 +31,7 @@ public class RemoveElement_27 {
     }
 
     public static void main(String[] args) {
-        RemoveElement_27 re = new RemoveElement_27();
+        No_27 re = new No_27();
         int[] nums = {2};
         System.out.println(re.removeElement(nums, 3));
     }

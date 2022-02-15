@@ -3,7 +3,7 @@ package easy;
 /**
  * No.704
  */
-public class Search_704 {
+public class No_704 {
     public int search(int[] nums, int target) {
         if (nums == null || nums.length == 0) {
             return -1;

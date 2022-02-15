@@ -3,7 +3,7 @@ package easy;
 /**
  * No.14 最长公共前缀
  */
-public class LongestCommonPrefix_14 {
+public class No_14 {
     public String longestCommonPrefix(String[] strs) {
         if(null == strs || strs.length == 0) {
             return "";
@@ -38,7 +38,7 @@ public class LongestCommonPrefix_14 {
     }
 
     public static void main(String[] args) {
-        LongestCommonPrefix_14 lcp = new LongestCommonPrefix_14();
+        No_14 lcp = new No_14();
         String[] strs = {"flower","flow","flight"};
         System.out.printf(lcp.longestCommonPrefix(strs));
     }

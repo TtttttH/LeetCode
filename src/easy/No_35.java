@@ -3,7 +3,7 @@ package easy;
 /**
  * No.35 搜索插入的位置 给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
  */
-public class SearchInsert_35 {
+public class No_35 {
 
     public int searchInsert(int[] nums, int target) {
         if (nums == null || nums.length == 0) {
@@ -46,7 +46,7 @@ public class SearchInsert_35 {
 //    }
 
     public static void main(String[] args) {
-        SearchInsert_35 si = new SearchInsert_35();
+        No_35 si = new No_35();
         int[] nums = {1,3};
         System.out.println("result: " + si.searchInsert(nums, 0));
     }

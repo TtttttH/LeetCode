@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * No.349:两个数组的交集
  */
-public class Intersection_349 {
+public class No_349 {
     public int[] intersection(int[] nums1, int[] nums2) {
         if (nums1 == null || nums2 == null) {
             return null;

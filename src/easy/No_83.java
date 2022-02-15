@@ -3,7 +3,7 @@ package easy;
 /**
  * No.83 删除排序链表中的重复元素
  */
-public class DeleteDuplicates_83 {
+public class No_83 {
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null || head.next == null) {
             return head;

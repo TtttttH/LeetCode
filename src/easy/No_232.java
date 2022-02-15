@@ -1,11 +1,7 @@
 package easy;
 
-import com.sun.jmx.remote.internal.ArrayQueue;
-
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.concurrent.BlockingDeque;
-import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * No.232 用栈实现队列
@@ -17,11 +13,11 @@ import java.util.concurrent.LinkedBlockingQueue;
  * int param_3 = obj.peek();
  * boolean param_4 = obj.empty();
  */
-public class MyQueue {
+public class No_232 {
 
     Deque<Integer> stack1;
     Deque<Integer> stack2;
-    public MyQueue() {
+    public No_232() {
         stack1 = new ArrayDeque<>(); // 负责进栈
         stack2 = new ArrayDeque<>(); // 负责出栈
     }

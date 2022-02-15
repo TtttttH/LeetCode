@@ -3,7 +3,7 @@ package easy;
 /**
  * No.383 赎金信
  */
-public class CanConstruct_383 {
+public class No_383 {
     public boolean canConstruct(String ransomNote, String magazine) {
         if (magazine.length() < ransomNote.length()) {
             return false;

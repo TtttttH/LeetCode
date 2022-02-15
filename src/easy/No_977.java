@@ -3,7 +3,7 @@ package easy;
 /**
  * No.977 有序数组的平方
  */
-public class SortedSquares {
+public class No_977 {
     public int[] sortedSquares(int[] nums) {
         if (nums == null || nums.length == 0) {
             return null;
@@ -29,7 +29,7 @@ public class SortedSquares {
 
     public static void main(String[] args) {
         int[] nums = {-4, -1, 0 ,3, 10};
-        SortedSquares ss = new SortedSquares();
+        No_977 ss = new No_977();
         int[] res = ss.sortedSquares(nums);
         for (int i = 0; i < res.length; i ++) {
                 System.out.printf((res[i]) + "  ");

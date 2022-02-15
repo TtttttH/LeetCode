@@ -3,7 +3,7 @@ package easy;
 /**
  * No.69 Sqrt(x)
  */
-public class MySqrt_69 {
+public class No_69 {
 
     public int mySqrt(int x) {
         if (x == 1) {

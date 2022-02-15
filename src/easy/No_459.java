@@ -3,7 +3,7 @@ package easy;
 /**
  * No.459 重复的子字符串
  */
-public class RepeatedSubString_459 {
+public class No_459 {
 
     public void getNext(int[] next, String s) {
         int j = -1;

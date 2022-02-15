@@ -3,7 +3,7 @@ package easy;
 import java.util.Deque;
 import java.util.LinkedList;
 
-public class IsValid_20 {
+public class No_20 {
 
     public boolean isValid(String s) {
         Deque<Character> deque = new LinkedList<>();

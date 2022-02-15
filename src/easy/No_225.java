@@ -6,12 +6,12 @@ import java.util.Queue;
 /**
  * No.225 用队列实现栈
  */
-public class MyStack {
+public class No_225 {
 
     Queue<Integer> queue1;
     Queue<Integer> queue2; //辅助队列
 
-    public MyStack() {
+    public No_225() {
         queue1 = new LinkedList<>();
         queue2 = new LinkedList<>();
     }

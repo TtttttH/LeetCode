@@ -7,7 +7,7 @@ import java.util.Stack;
 /**
  * No.496 思路：单调栈先处理nums2的数据关系，找到每个数的最大值,存入map再对1做映射
  */
-public class NextGreaterElement {
+public class No_496 {
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
         Map<Integer, Integer> map = new HashMap<>();
 //
@@ -42,7 +42,7 @@ public class NextGreaterElement {
     }
 
     public static void main(String[] args) {
-        NextGreaterElement nge = new NextGreaterElement();
+        No_496 nge = new No_496();
         int[] nums1 = {4, 1, 2};
         int[] nums2 = {1,3,4,2};
         System.out.printf(nge.nextGreaterElement(nums1, nums2).toString());

@@ -3,7 +3,7 @@ package easy;
 /**
  * No.66 加一
  */
-public class PlusOne_66 {
+public class No_66 {
     public int[] plusOne(int[] digits) {
         int len = digits.length;
         for (int i = len - 1; i >= 0; i --) {
