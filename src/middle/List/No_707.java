@@ -3,10 +3,10 @@ package middle.List;
 /**
  * No.707 :设计链表
  */
-class MyLinkedList {
+class No_707 {
     int size;
     ListNode head;
-    public MyLinkedList() {
+    public No_707() {
         size = 0;
         head = new ListNode(0); // pseudo-head, not the real head node
     }

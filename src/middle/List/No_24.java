@@ -3,7 +3,7 @@ package middle.List;
 /**
  * No.24 两两交换链表中的结点
  */
-public class SwapPairs {
+public class No_24 {
     public ListNode swapPairs(ListNode head) {
         if (head == null || head.next == null) {
             return head;
@@ -35,7 +35,7 @@ public class SwapPairs {
         b.next = c;
         c.next = d;
 
-        SwapPairs sp = new SwapPairs();
+        No_24 sp = new No_24();
         ListNode cur = a.next;
         sp.swapPairs(a);
 

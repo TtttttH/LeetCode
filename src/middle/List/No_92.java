@@ -3,7 +3,7 @@ package middle.List;
 /**
  * No.92 反转链表
  */
-public class ReverseBetween_92 {
+public class No_92 {
     public ListNode reverseBetween(ListNode head, int left, int right) {
         ListNode dummy = new ListNode(-1);
         dummy.next = head;

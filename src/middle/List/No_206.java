@@ -2,7 +2,7 @@ package middle.List;
 /**
  * No.206
  */
-public class ReverseList_206 {
+public class No_206 {
     public ListNode reverseList(ListNode head) {
         ListNode cur = head;
         ListNode pre = null;

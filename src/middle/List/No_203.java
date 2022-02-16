@@ -1,6 +1,6 @@
 package middle.List;
 
-public class RemoveElements_203 {
+public class No_203 {
     public ListNode removeElements(ListNode head, int val) {
         if (head == null) {
             return null;

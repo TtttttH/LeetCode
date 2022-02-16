@@ -3,7 +3,7 @@ package middle.List;
 /**
  * No.142 环形链表
  */
-public class DetectCycle_142 {
+public class No_142 {
     public ListNode detectCycle (ListNode head) {
         if (head == null || head.next == null) {
             return null;

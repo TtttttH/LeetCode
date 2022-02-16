@@ -3,7 +3,7 @@ package middle.List;
 /**
  * No.2
  */
-public class AddTwoNumbers {
+public class No_2 {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode root = new ListNode(0);
         ListNode move = root;
@@ -28,7 +28,7 @@ public class AddTwoNumbers {
     public static void main(String[] args) {
         ListNode l1 = new ListNode(2,new ListNode(4, new ListNode(3)));
         ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
-        System.out.println("result:" + new AddTwoNumbers().addTwoNumbers(l1, l2).val);
+        System.out.println("result:" + new No_2().addTwoNumbers(l1, l2).val);
     }
 }
 

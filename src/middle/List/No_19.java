@@ -4,7 +4,7 @@ package middle.List;
 /**
  *  No.19 删除链表的倒数第N个结点
  */
-public class RemoveNthFromEnd {
+public class No_19 {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         if (head == null || head.next == null) {
             return null;
