@@ -9,7 +9,7 @@ public class No_92 {
         dummy.next = head;
         ListNode pre = dummy;
 
-        int i = 0;
+        int i = 1;
         while (i < left) {
             pre = pre.next;
             i ++;
