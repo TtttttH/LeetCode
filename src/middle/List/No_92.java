@@ -16,14 +16,13 @@ public class No_92 {
         }
 
         ListNode cur = pre.next;
-        ListNode temp;
+        ListNode next;
         for (int j = left; j < right; j ++) {
-            temp = cur.next;
-            cur.next = temp.next;
-            temp.next = pre.next;
-            pre.next = temp;
+            next = cur.next;
+            cur.next = next.next;
+            next.next = pre.next;
+            pre.next = next;
         }
-
         return dummy.next;
     }
 }
