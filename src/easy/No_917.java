@@ -15,24 +15,14 @@ public class No_917 {
         int left = 0;
         int right = s.length() - 1;
         while (left < right) {
-            if (Character.isLetter(chars[left])) {
-                while (!Character.isLetter(chars[right])) {
-                    right --;
-                }
-
-                char temp = chars[left];
-                chars[left ++] = chars[right];
-                chars[right --] = temp;
-            } else {
-                left ++;
-            }
+            while (!Character.isLetter(chars[left])) left ++;
+            while (!Character.isLetter(chars[right])) right --;
+            if (left >= right) break;
+            char temp = chars[left];
+            chars[left ++] = chars[right];
+            chars[right --] = temp;
         }
 
-        StringBuilder sb = new StringBuilder();
-        for (char ch : chars) {
-            sb.append(ch);
-        }
-
-        return sb.toString();
+        return new String(chars);
     }
 }
