@@ -6,7 +6,7 @@ import java.util.LinkedList;
 /**
  * No.239 滑动窗口最大值
  */
-public class MaxSlidingWindow_239 {
+public class No_239 {
 
     public int[] maxSlidingWindow(int[] nums, int k) {
         Deque<Integer>  deque = new LinkedList<>();
