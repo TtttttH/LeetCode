@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * No.49 字母异位词分组
  */
-public class GroupAnagrams_49 {
+public class No_49 {
     public List<List<String>> groupAnagrams(String[] strs) {
         Map<String, ArrayList<String>> map = new HashMap<>();
         if (strs == null || strs.length == 0) {
