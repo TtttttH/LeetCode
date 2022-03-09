@@ -4,29 +4,32 @@ package middle.backtrack;
  * No.79 单词搜索(middle) 微软
  */
 public class No_79 {
-    int[][] dire = {{0, 1}, {0, -1}, {1, 0},{-1, 0}};
+    boolean find = false;
     public boolean exist(char[][] board, String word) {
-        boolean[][] visited = new boolean[board.length][board[0].length];
-        for (int i = 0; i < board.length; i ++) {
-            for (int j = 0; j < board[0].length; j ++) {
-                if (backtrack(board, visited, word, 0, i, j)) return true;
+        int m = board.length;
+        int n = board[0].length;
+        boolean[][] visited = new boolean[m][n];
+        for (int i = 0; i < m; i ++) {
+            for (int j = 0; j < n; j ++) {
+                backtrack(board, visited, word, i, j, 0);
             }
         }
-        return false;
+
+        return find;
     }
 
-    private boolean backtrack(char[][] board, boolean [][] visited, String word, int k, int curRow, int curCol) {
-        if (board[curRow][curCol] != word.charAt(k)) return false;
-        if (k == word.length() - 1) return true;
-        visited[curRow][curCol] = true;
-        for(int[] dir : dire) {
-            int nextRow = curRow + dir[0];
-            int nextCol = curCol + dir[1];
-            if (nextRow >= 0 && nextRow < board.length && nextCol >= 0 && nextCol < board[0].length && !visited[nextRow][nextCol]) {
-                if (backtrack(board, visited, word,k + 1,  nextRow, nextCol)) return true;
-            }
+    private void backtrack(char[][] board, boolean[][] visited, String s, int i, int j, int idx) {
+        if (i < 0 || j < 0 || i >= board.length || j >= board[0].length || visited[i][j] || find || board[i][j] != s.charAt(idx)) return;
+        if (idx == s.length() - 1) {
+            find = true;
+            return;
         }
-        visited[curRow][curCol] = false;
-        return false;
+
+        visited[i][j] = true;
+        backtrack(board, visited, s, i + 1, j, idx + 1);
+        backtrack(board, visited, s, i, j + 1, idx + 1);
+        backtrack(board, visited, s, i , j - 1, idx + 1);
+        backtrack(board, visited, s, i - 1, j, idx + 1);
+        visited[i][j] = false;
     }
 }
