@@ -3,6 +3,7 @@ package hard.backtrack;
 /**
  * No.37 解数独
  */
+//不再参考该版本，请参考官方解法1，解法二位运算待学习
 public class No_37 {
     public void solveSudoku(char[][] board) {
         backtrack(board);
@@ -16,7 +17,7 @@ public class No_37 {
                     if (isValid(board, i, j, k)) {
                         board[i][j] = k;
                         if (backtrack(board)) return true; //找到合适的情况，直接返回true
-                        board[i][j] = '.';
+//                        board[i][j] = '.';
                     }
                 }
                 return false; //如果board[i][j] 没有合适的值能够完成整个递归，返回FALSE；
