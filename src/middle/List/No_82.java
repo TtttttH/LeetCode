@@ -20,11 +20,10 @@ public class No_82 {
                 }
 
                 pre.next = cur.next;
-                cur =cur.next;
             } else {
                 pre = pre.next;
-                cur = cur.next;
             }
+            cur =cur.next;
         }
 
         return dummy.next;
