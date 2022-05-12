@@ -11,28 +11,38 @@ public class No_54 {
         int m = matrix.length;
         int n = matrix[0].length;
         List<Integer> res = new ArrayList<>();
-        int startx = 0;
-        int starty = 0;
-        int offset = 1;
+        int offset = 0;
         int loop = Math.min(m, n) / 2;
-        int count = 0;
         while (loop > 0) {
-            int i = startx;
-            int j = starty;
-            for (; j < n - offset; j ++) {
-                res.add(matrix[startx][j]);
+            for (int j = offset; j < n - offset; j ++) {
+                res.add(matrix[offset][j]);
             }
 
-            for (; i < m - offset; i ++) {
-                res.add (matrix[i][j]);
+            for (int i = offset + 1; i < m - offset; i ++) {
+                res.add(matrix[i][n - offset - 1]);
             }
 
-            for (; j > starty; j --) {
-                res.add(matrix[i][j]);
+            for (int j = n - offset - 2; j >= offset; j --) {
+                res.add(matrix[m - offset - 1][j]);
             }
 
-            for (; i > startx; i ++) {
-                res.add(matrix[i][j]);
+            for (int i = n - offset - 2; i > offset; i --) {
+                res.add(matrix[i][offset]);
+            }
+
+            loop --;
+            offset ++;
+        }
+
+        if (Math.min(m, n) % 2 == 1) {
+            if (m > n) {
+                for (int i = offset; i < m - offset; i ++) {
+                    res.add(matrix[i][offset]);
+                }
+            } else {
+                for (int j = offset; j < n - offset; j ++) {
+                    res.add(matrix[offset][j]);
+                }
             }
         }
 
