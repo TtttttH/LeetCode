@@ -1,6 +1,8 @@
 package SwordToOffer.middle;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -8,16 +10,16 @@ import java.util.Set;
  */
 public class No_48 {
     public int lengthOfLongestSubstring(String s) {
-        int res = 0;
-        Set<Character> set = new HashSet<>();
-        char[] ch = s.toCharArray();
-        int l = 0;
-        for (int r = 0; r < ch.length; r ++) {
-            while (set.contains(ch[r])) {
-                set.remove(ch[l ++]);
+        Map<Character, Integer> map = new HashMap<>();
+        char[] chars = s.toCharArray();
+        int res = 0, left = -1;
+        for (int right = 0; right < chars.length; right ++) {
+            if (map.containsKey(chars[right])) {
+                left = Math.max(left, map.get(chars[right]));
             }
-            set.add(ch[r]);
-            res = Math.max(res, r - l + 1);
+
+            map.put(chars[right], right);
+            res = Math.max(res, right - left);
         }
 
         return res;
